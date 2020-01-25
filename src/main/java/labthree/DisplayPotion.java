@@ -12,11 +12,11 @@ public class DisplayPotion {
    */
   public static void main(String[] args) {
     // Potion title
-    String title = "Wealth Acquisition Potion";
+    String title = "Thumb Acquisition Potion";
     // Ingredient names
-    String binding = "glue";
-    String liquid = "water";
-    String material = "shredded dollar bills";
+    String binding = "mashed beetle";
+    String liquid = "distilled water";
+    String material = "crushed alligator plant";
     // Ingredient amounts
     int yieldAmt = 1;
     double bindingAmt = 1.0;
