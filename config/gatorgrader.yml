@@ -27,9 +27,9 @@ writing:
 CountCommits --count 3
 ExecuteCommand --command "gradle build"
 MatchCommandFragment --command "gradle -q --console plain run" --fragment "3.14" --count 1 --exact
-MatchCommandFragment --command "gradle -q --console plain run" --fragment "4.2" -count 1 --exact
-MatchCommandFragment --command "gradle -q --console plain run" --fragment "1.0" -count 1 --exact
-MatchCommandFragment --command "gradle -q --console plain run" --fragment "water" -count 2 --exact
-MatchCommandFragment --command "gradle -q --console plain run" --fragment "glue" -count 2 --exact
-MatchCommandFragment --command "gradle -q --console plain run" --fragment "shredded dollar bills" -count 1 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "4.2" --count 1 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "1.0" --count 1 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "water" --count 2 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "glue" --count 2 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "shredded dollar bills" --count 1 --exact
 CountCommandOutput --command "gradle -q --console plain run" --count 11
