@@ -1,0 +1,37 @@
+---
+name: lab-03
+break: true
+indent: 4
+---
+
+src/main/java/labthree:
+    DisplayPotion.java:
+        ConfirmFileExists
+        CountSingleLineComments --language Java --count 3
+        MatchFileFragment --fragment "double" --count 2 --exact
+        MatchFileFragment --fragment "int" --count 1 --exact
+        MatchFileFragment --fragment "water" --count 2 --exact
+        MatchFileFragment --fragment "glue" --count 2 --exact
+        MatchFileFragment --fragment "3.14" --count 1 --exact
+        MatchFileFragment --fragment "4.2" --count 1 --exact
+        MatchFileFragment --fragment "1.0" --count 1 --exact
+        MatchFileFragment --fragment "shredded dollar bills" --count 2 --exact
+
+writing:
+    reflection.md:
+        ConfirmFileExists
+        mdl --rules ~MD009,~MD013,~MD0022,~MD026
+        CountFileWords --count 250
+        CountFileParagraphs --count 4
+        MatchFileFragment --fragment "{YOUR NAME HERE}" --count 0 --exact
+        MatchFileFragment --fragment "TODO" --count 0 --exact
+        
+CountCommits --count 3
+ExecuteCommand --command "gradle build"
+MatchCommandOutput --command "gradle -q --console plain run" --fragment "3.14" --count 1 --exact
+MatchCommandOutput --command "gradle -q --console plain run" --fragment "4.2" -count 1 --exact
+MatchCommandOutput --command "gradle -q --console plain run" --fragment "1.0" -count 1 --exact
+MatchCommandOutput --command "gradle -q --console plain run" --fragment "water" -count 2 --exact
+MatchCommandOutput --command "gradle -q --console plain run" --fragment "glue" -count 2 --exact
+MatchCommandOutput --command "gradle -q --console plain run" --fragment "shredded dollar bills" -count 1 --exact
+CountCommandOutput --command "gradle -q --console plain run" --count 11
