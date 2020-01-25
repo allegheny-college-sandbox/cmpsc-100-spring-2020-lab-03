@@ -26,8 +26,8 @@ writing:
         mdl --rules ~MD009,~MD013,~MD0022,~MD026
         CountFileWords --count 250
         CountFileParagraphs --count 4
-        MatchFileFragment --fragment "{YOUR NAME HERE}" --count 0 --exact
         MatchFileFragment --fragment "TODO" --count 0 --exact
+        MatchFileFragment --fragment "{YOUR NAME HERE}" --count 0 --exact
         
 CountCommits --count 3
 ExecuteCommand --command "gradle build"

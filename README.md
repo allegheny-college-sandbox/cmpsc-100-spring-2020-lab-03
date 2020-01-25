@@ -39,10 +39,58 @@ I recommend reading the [GitHub Guides](https://guides.github.com) which GitHub 
 * [Documenting your projects on GitHub](https://guides.github.com/features/wikis/)
 * [GitHub Handbook](https://guides.github.com/introduction/git-handbook/)
 
+## G. Wiz digitizes his potions
+
+G. Wiz has heard that translating old paper-based recipes to computer print-outs is the next big thing in the wizard world of the Gator Kingdom, as 
+written in the latest _Gator Wizards Quarterly_. There's just one thing standing in the way of G. Wiz being able to do this work on their own -- they don't have any thumbs. While an issue which afflicts many of their colleagues in the animal kingdom, not having thumbs leads to a "hunt and peck" method of typing, which is quite a bit slower than what G. Wiz would like. Things aren't going very well on the mainframe computer owned by the university where he teaches.
+
+However, flipping through his paper records a couple of nights ago, he came upon an old recipe for a "Thumb Acquisition Potion," something they think could be of amazing help! Additionally, G. Wiz thinks that if you could create a version of the card so that they could just plug in new names, ingredients and numbers, it'd be amazing. One note to help you, all ingredients in the Gator Kingdom are measured in `ounces`.
+
+If you could digitize the recipe card in a format like that pictured below, G. Wiz might finally be able to wrangle some thumbs and get to some real business.
+
+```
+Thumb Acquisition Potion
+
+Yields: 1 bottle (8.34 ounces)
+
+  4.2 ounces	distilled water
+	3.1 ounces	crushed alligator plant
+	1.0 ounces	mashed beetle
+```
+
 ## Evaluation
 
-This assignment requires the following outcomes:
+### `DisplayPotion.java`
 
+- [ ] Contains no:
+    * `TODO` markers
+    * `{Your Name Here}` markers
+- [ ] Contains 4 single-line comments separating the various kinds of identifiers necessary for the program, for example:
+    * Ingredient names
+    * Ingredient amounts
+    * The potion's title
+    * The section which prints the format to the screen
+- [ ] Uses the following identifiers to store information:
+    * `String`s called `binding`, `material`, and `liquid` to store the names of the respective ingredients
+    * Correct _data types_ and identifiers called `yieldAmt`, `bindingAmt`, `materialAmt`, and `liquidAmt` to store ingredient amounts
+- [ ] Implements correct assignment statements for the above identifiers
+- [ ] Prints this data in the format picture above, using `tabs` to indent and line up the ingredient list
+    * Uses only 5 lines to do so
+- [ ] Passes `gradle build`
+- [ ] Passes `gradle run`
+
+### `reflection.md`
+
+- [ ] Contains no:
+    * `TODO` markers
+    * `{Your Name Here}` markers
+- [ ] Contains 250 words
+- [ ] Written in correct markup (passes `mdl`)
+- [ ] Responds to all questions
+
+### Repository
+
+- [ ] Has 3 `commit`s
 
 ## Accepting the assignment
 
@@ -68,24 +116,6 @@ This assignment requires the following outcomes:
 * If I (the instructor) were to clone my own repository, I'd enter (your link will look different):
 ```
 git clone git@github.com:allegheny-college-cmpsc-100-spring-2020/cmpsc-100-spring-2020-lab-03-dluman
-```
-
-## G. Wiz digitizes his potions
-
-
-
-```
-Wealth Acquisition Potion
-Yields: 1 bottles
-
-        4.2 ounces      water
-        3.14 ounces     shredded dollar bills
-        1.0 ounces      glue
-
-1. Pour water into a large pot.
-2. Slowly sprinkle shredded dollar bills into pot.
-3. Stir glue slowly into mixture.
-4. Chant "money money money money" for as many minutes as the amount of money you wish to have.
 ```
 
 ## GatorGrader
