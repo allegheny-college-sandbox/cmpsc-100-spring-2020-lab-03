@@ -20,7 +20,7 @@ repositories {
 }
 
 apply plugin: 'application'
-mainClassName = 'labtwo.CrystalBall'
+mainClassName = 'labthree.DisplayPotion'
 
 apply plugin: 'checkstyle'
 checkstyle.toolVersion = '8.1'
