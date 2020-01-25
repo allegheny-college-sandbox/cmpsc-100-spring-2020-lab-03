@@ -8,11 +8,15 @@ src/main/java/labthree:
     DisplayPotion.java:
         ConfirmFileExists
         CountSingleLineComments --language Java --count 3
-        MatchFileFragment --fragment "String" --count 9 --exact
-        MatchFileFragment --fragment "double" --count 3 --exact
-        MatchFileFragment --fragment "int" --count 1 --exact
         MatchFileFragment --fragment "water" --count 1 --exact
         MatchFileFragment --fragment "glue" --count 1 --exact
+        MatchFileFragment --fragmnet "TODO" --count 0 --exact
+        MatchFileFragment --fragment "String" --count 8 --exact
+        MatchFileFragment --fragment "int yieldAmt = 1;" --count 1 --exact
+        MatchFileFragment --fragment "{Your Name Here}" --count 0 --exact
+        MatchFileFragment --fragment "double bindingAmt = 1.0;" --count 1 --exact
+        MatchFileFragment --fragment "double liquidAmt = 4.2;" --count 1 --exact
+        MatchFileFragment --fragment "double materialAmt = 3.14;" --count 1 --exact
         MatchFileFragment --fragment "shredded dollar bills" --count 1 --exact
 
 writing:
