@@ -24,7 +24,7 @@ public class DisplayPotion {
     double materialAmt = 3.14;
     // Display
     System.out.println(title);
-    System.out.println("Yields: " + yieldAmt + " bottle(s)");
+    System.out.print("Yields: " + yieldAmt + " bottle(s) ");
     System.out.println("(" + (bindingAmt + liquidAmt + materialAmt) + " ounces)");
     System.out.println();
     System.out.println("\t" + liquidAmt + " ounces\t" + liquid);
