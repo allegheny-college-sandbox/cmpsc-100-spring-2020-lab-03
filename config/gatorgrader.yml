@@ -8,13 +8,11 @@ src/main/java/labthree:
     DisplayPotion.java:
         ConfirmFileExists
         CountSingleLineComments --language Java --count 3
-        MatchFileFragment --fragment "double" --count 2 --exact
+        MatchFileFragment --fragment "String"
+        MatchFileFragment --fragment "double" --count 3 --exact
         MatchFileFragment --fragment "int" --count 1 --exact
-        MatchFileFragment --fragment "water" --count 2 --exact
-        MatchFileFragment --fragment "glue" --count 2 --exact
-        MatchFileFragment --fragment "3.14" --count 1 --exact
-        MatchFileFragment --fragment "4.2" --count 1 --exact
-        MatchFileFragment --fragment "1.0" --count 1 --exact
+        MatchFileFragment --fragment "water" --count 1 --exact
+        MatchFileFragment --fragment "glue" --count 1 --exact
         MatchFileFragment --fragment "shredded dollar bills" --count 2 --exact
 
 writing:
@@ -28,10 +26,10 @@ writing:
         
 CountCommits --count 3
 ExecuteCommand --command "gradle build"
-MatchCommandOutput --command "gradle -q --console plain run" --fragment "3.14" --count 1 --exact
-MatchCommandOutput --command "gradle -q --console plain run" --fragment "4.2" -count 1 --exact
-MatchCommandOutput --command "gradle -q --console plain run" --fragment "1.0" -count 1 --exact
-MatchCommandOutput --command "gradle -q --console plain run" --fragment "water" -count 2 --exact
-MatchCommandOutput --command "gradle -q --console plain run" --fragment "glue" -count 2 --exact
-MatchCommandOutput --command "gradle -q --console plain run" --fragment "shredded dollar bills" -count 1 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "3.14" --count 1 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "4.2" -count 1 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "1.0" -count 1 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "water" -count 2 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "glue" -count 2 --exact
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "shredded dollar bills" -count 1 --exact
 CountCommandOutput --command "gradle -q --console plain run" --count 11
