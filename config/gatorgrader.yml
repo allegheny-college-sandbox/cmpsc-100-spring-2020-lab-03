@@ -12,8 +12,8 @@ src/main/java/labthree:
         MatchFileFragment --fragment "glue" --count 1 --exact
         MatchFileFragment --fragment "TODO" --count 0 --exact
         MatchFileFragment --fragment "\t" --count 6
-        MatchFileFragment --fragment '\"' --count 2
-        MatchFileFragment --fragment "String " --count 5 --exact
+        MatchFileFragment --fragment '\\\"' --count 2
+        MatchFileFragment --fragment "String " --count 4 --exact
         MatchFileFragment --fragment "int yieldAmt = 1;" --count 1 --exact
         MatchFileFragment --fragment "{Your Name Here}" --count 0 --exact
         MatchFileFragment --fragment "double bindingAmt = 1.0;" --count 1 --exact
@@ -32,4 +32,4 @@ writing:
         
 CountCommits --count 3
 ExecuteCommand --command "gradle build"
-CountCommandOutput --command "gradle -q --console plain run" --count 6
+CountCommandOutput --command "gradle -q --console plain run" --count 5
