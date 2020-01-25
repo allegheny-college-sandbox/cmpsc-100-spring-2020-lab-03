@@ -12,7 +12,6 @@ src/main/java/labthree:
         MatchFileFragment --fragment "glue" --count 1 --exact
         MatchFileFragment --fragment "TODO" --count 0 --exact
         MatchFileFragment --fragment "\t" --count 6
-        MatchFileFragment --fragment '\\\"' --count 2
         MatchFileFragment --fragment "String " --count 4 --exact
         MatchFileFragment --fragment "int yieldAmt = 1;" --count 1 --exact
         MatchFileFragment --fragment "{Your Name Here}" --count 0 --exact
