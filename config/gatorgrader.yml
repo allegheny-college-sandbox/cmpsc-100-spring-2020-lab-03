@@ -9,7 +9,7 @@ src/main/java/labthree:
         ConfirmFileExists
         CountSingleLineComments --language Java --count 4
         MatchFileFragment --fragment "distilled water" --count 1 --exact
-        MatchFileFragment --fragment "mashed beetles" --count 1 --exact
+        MatchFileFragment --fragment "mashed beetle" --count 1 --exact
         MatchFileFragment --fragment "TODO" --count 0 --exact
         MatchFileFragment --fragment "\t" --count 6
         MatchFileFragment --fragment "String " --count 4 --exact
