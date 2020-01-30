@@ -15,9 +15,9 @@ src/main/java/labthree:
         MatchFileFragment --fragment "String " --count 4 --exact
         MatchFileFragment --fragment "int yieldAmt = 1;" --count 1 --exact
         MatchFileFragment --fragment "{Your Name Here}" --count 0 --exact
-        MatchFileFragment --fragment "double bindingAmt = 1.0;" --count 1 --exact
-        MatchFileFragment --fragment "double liquidAmt = 4.2;" --count 1 --exact
-        MatchFileFragment --fragment "double materialAmt = 3.1;" --count 1 --exact
+        MatchFileFragment --fragment "double bindingAmt = 1;" --count 1 --exact
+        MatchFileFragment --fragment "double liquidAmt = 4;" --count 1 --exact
+        MatchFileFragment --fragment "double materialAmt = 3;" --count 1 --exact
         MatchFileFragment --fragment "crushed alligator plant" --count 1 --exact
 
 writing:
@@ -27,8 +27,10 @@ writing:
         CountFileWords --count 250
         CountFileParagraphs --count 4
         MatchFileFragment --fragment "TODO" --count 0 --exact
+        CountMarkdownTags --tag "code_block" --count 1 --exact
         MatchFileFragment --fragment "{YOUR NAME HERE}" --count 0 --exact
         
 CountCommits --count 3
 ExecuteCommand --command "gradle build"
-CountCommandOutput --command "gradle -q --console plain run" --count 5
+MatchCommandOutput --command "gradle -q --console plain run" --fragment 
+MatchCommandFragment --command "gradle -q --console plain run" --fragment "8 ounces" --count 1 --exact

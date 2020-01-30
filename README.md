@@ -51,11 +51,11 @@ If you could digitize the recipe card in a format like that pictured below, G. W
 ```
 Thumb Acquisition Potion
 
-Yields: 1 bottle (8.34 ounces)
+Yields: 1 bottle (8 ounces)
 
-  4.2 ounces	distilled water
-	3.1 ounces	crushed alligator plant
-	1.0 ounces	mashed beetle
+	4	ounces	distilled water
+	3	ounces	crushed alligator plant
+	1	ounces	mashed beetle
 ```
 
 ## Evaluation
