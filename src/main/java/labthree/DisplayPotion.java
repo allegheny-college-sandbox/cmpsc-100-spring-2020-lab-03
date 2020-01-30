@@ -19,9 +19,9 @@ public class DisplayPotion {
     String material = "crushed alligator plant";
     // Ingredient amounts
     int yieldAmt = 1;
-    double bindingAmt = 1;
-    double liquidAmt = 4;
-    double materialAmt = 3;
+    int bindingAmt = 1;
+    int liquidAmt = 4;
+    int materialAmt = 3;
     // Display
     System.out.println(title);
     System.out.print("Yields: " + yieldAmt + " bottle ");
