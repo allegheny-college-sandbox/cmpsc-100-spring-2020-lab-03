@@ -15,9 +15,9 @@ src/main/java/labthree:
         MatchFileFragment --fragment "String " --count 4 --exact
         MatchFileFragment --fragment "int yieldAmt = 1;" --count 1 --exact
         MatchFileFragment --fragment "{Your Name Here}" --count 0 --exact
-        MatchFileFragment --fragment "double bindingAmt = 1;" --count 1 --exact
-        MatchFileFragment --fragment "double liquidAmt = 4;" --count 1 --exact
-        MatchFileFragment --fragment "double materialAmt = 3;" --count 1 --exact
+        MatchFileFragment --fragment "int bindingAmt = 1;" --count 1 --exact
+        MatchFileFragment --fragment "int liquidAmt = 4;" --count 1 --exact
+        MatchFileFragment --fragment "int materialAmt = 3;" --count 1 --exact
         MatchFileFragment --fragment "crushed alligator plant" --count 1 --exact
 
 writing:
